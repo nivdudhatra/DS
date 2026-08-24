@@ -37,7 +37,7 @@ int pop()
 
 
 
-void evalutepostfix(char s[])
+void evaluteprefix(char s[])
 {	
 	int i;
 	for (i=0;i<strlen(s);i++)
@@ -87,7 +87,7 @@ void main ()
 	scanf("%s",str);
 	
 	
-	evalutepostfix(strrev(str));
+	evaluteprefix(strrev(str));
 	
 	int ans = pop();
 	
